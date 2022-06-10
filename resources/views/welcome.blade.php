@@ -2,15 +2,15 @@
 
 
 @section('content')
-
 <br>
 <div class="container">
 <div class="card-columns">
 @foreach($publications as $publication)
+<a href= "{{ route('publication_path',[$publication->slug]) }}">
 <div class="card mb-3" style="max-width: 540px;">
   <div class="row no-gutters">
     <div class="col-md-4">
-      <img src="..." alt="...">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Eiche_bei_Graditz.jpg/1200px-Eiche_bei_Graditz.jpg" width="200" alt="...">
     </div>
     <div class="col-md-8">
       <div class="card-body">
@@ -21,6 +21,7 @@
     </div>
   </div>
 </div>
+</a>
 @endforeach
 </div>
 </div>

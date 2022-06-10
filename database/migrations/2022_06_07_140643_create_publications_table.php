@@ -20,6 +20,9 @@ class CreatePublicationsTable extends Migration
 		$table->decimal('price',$precision = 8, $scale = 2);
 		$table->integer('user_id')->unsigned();
 		$table->integer('category_id')->unsigned();
+		$table->boolean('actived');
+		$table->string('slug');
+		$table->string('ip');
                 $table->timestamps();
         });
     }

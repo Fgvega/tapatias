@@ -13,7 +13,9 @@
 
 
 Route::get('/','IndexController@index')->name('index');
-
+Route::get('/create_publication','PublicationsController@createPublication')->name('createPublication');
+Route::name('store_publication')->post('/publications','PublicationsController@store_publication');
+Route::name('publication_path')->get('/{publication}','PublicationsController@show');
 Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
