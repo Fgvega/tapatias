@@ -30,15 +30,15 @@
 </div>
 <div class="form-group">
 	<label for="image3">Imagen 3:</label>
-	<input type="file" class="form-control-file" id="img3">
+	<input type="file" class="form-control-file" id="img3" name="img3">
 </div>
 <div class="form-group">
 	<label for="image4">Imagen 4:</label>
-	<input type="file" class="form-control-file" id="img4">
+	<input type="file" class="form-control-file" id="img4" name="img4">
 </div>
 <div class="form-group">
 	<label for="image5">Imagen 5:</label>
-	<input type="file" class="form-control-file" id="img5">
+	<input type="file" class="form-control-file" id="img5" name="img5">
 </div>
 <hr>
   <button type="submit" class="btn btn-primary">Publicar</button>
